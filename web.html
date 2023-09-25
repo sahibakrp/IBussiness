@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css">
+    <title>iBusiness</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+            <a href="web.html"><img src="dimond.png" alt="logo" ></a></div>
+            <li><a href="web.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firsrSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">We are providing Business related services</p>
+                <p class="text-small">We offer planning, prototyping, implementation, and enhancement services to help
+                    clients reach their company goals.</p>
+                <div class="buttons">
+                    <a href="https://youtu.be/f1HVVf_cPm4"><button class="btn">Subscribe</button></a>
+                    <a href="https://youtu.be/f1HVVf_cPm4"><button class="btn">Watch Video</button></a>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="./img2.jpg" alt="laptop img">
+            </div>
+        </div>
+    </section>
+    <section class="section" id="Services">
+        <div class="paras">
+            <p class="sectionTag text-big">The end of illiteracy here</p>
+            <p class="sectionSubTag text-small">Sustainable construction focuses on minimizing environmental impact,
+                reducing energy consumption, and utilizing eco-friendly materials. It promotes practices like green
+                building design, energy-efficient systems, renewable energy integration, and water conservation.
+                By prioritizing sustainability, we can create buildings that are not only environmentally friendly
+                but also healthier and more cost-effective in the long run.Discuss the importance of green building
+                practices, such as using renewable materials, incorporating energy-efficient systems, and implementing
+                sustainable design principles.Explore different types of construction materials, such as concrete,
+                steel,
+                timber, and composites, and discuss their advantages, disadvantages, and common applications.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img3.jpg" alt="laptop img" class="imgfluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="About">
+        <div class="paras">
+            <p class="sectionTag text-big">Sustainable Construction</p>
+            <p class="sectionSubTag text-small">Talk about the key considerations in building design, including
+                functionality, aesthetics, and space optimization. Discuss architectural styles and trends in
+                modern construction.Provide an overview of the project management process in construction,
+                including planning, scheduling, budgeting, and risk management. Discuss the role of a project
+                manager and common challenges in construction projects. Discuss the process of renovating or
+                remodeling existing buildings, including assessing structural integrity, making design decisions,
+                and managing the construction process.Explore sustainable landscaping techniques, such as
+                water-efficient irrigation systems, native plant selection, and eco-friendly hardscape materials,
+                to create beautiful and environmentally friendly outdoor spaces.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img4.jpg" alt="laptop img" class="imgfluid">
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Lets Grow together</p>
+            <p class="sectionSubTag text-small">The construction industry is constantly evolving with new technologies
+                that enhance efficiency, safety, and sustainability. Some notable advancements include Building
+                Information Modeling (BIM), which enables virtual modeling and collaboration; drones for site surveying
+                and inspection; 3D printing for rapid prototyping. Explore sustainable landscaping techniques, such
+                as water-efficient irrigation systems, native plant selection, and eco-friendly hardscape materials,
+                to create beautiful and environmentally friendly outdoor spaces.Green building practices:
+                energy-efficient
+                design, renewable energy integration, and sustainable construction methods. Are you interested in
+                construction
+                techniques, architectural styles, sustainable building practices, or something else related to
+                buildings? Please provide more details so I can assist you better.</p>
+        </div>
+        <div class="thumbnail">
+            <img src="img5.jpg" alt="laptop img" class="imgfluid">
+        </div>
+    </section>
+    <!-- <section class="Contact" id="Contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enetr Your name">
+            <input class="form-input" type="phone" name="Phone" id="Phone" placeholder="Enetr Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enetr Your Email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="8"
+                placeholder="Ellaborate Your Concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section> -->
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2023 www.iBusiness.com All rights reserved
+        </p>
+    </footer>
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        rightNav = document.querySelector('.rightNav')
+        navlist = document.querySelector('.nav-list')
+
+
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('v-class-resp')
+            navlist.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-nav-resp')
+        })
+    </script>
+</body>
+
+</html>

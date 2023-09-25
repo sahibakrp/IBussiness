@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <a href="web.html"><img src="dimond.png" alt="logo" ></a></div>
+            <li><a href="./web.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav> 
+    <div class="about-img">
+        <h2>iBusiness ARCHITECTURE & CONSTRUCTION SERVICES</h2>
+        <h1>Specializing in Design/Build Project Delivery</h1>
+        <p>Westchester, New York Based Professional Architecture & General Contracting Services</p>
+    </div>
+    <div class="about-content">
+        <h2>Welcome to iBusiness, where architectural excellence meets innovative design. We are a renowned 
+            architectural firm dedicated to transforming spaces and bringing visions to life. With a passion for 
+            creating inspiring structures that blend functionality, aesthetics, and sustainability, we have been at 
+            the forefront of the industry for 15 years.</h2>
+        <h2>A True Design/Build Architecture Firm</h2>
+        <ul>
+        <li>iBusiness is a fully integrated Design/Build architecture firm located in Briarcliff Manor, NY equipped to handle 
+            a variety of projects from start to finish, regardless of their unique requirements.</li>
+        <li>Sound design solutions appropriate to the individual project are placed at the center of the firm’s core 
+            values. Offering a diverse set of professional services helps assure success for both the firm as well 
+            as the client.</li>
+        <li>BCA is committed to its craft. An inherent respect for a thorough design process and an equally high 
+            standard for detail-oriented construction quality control helps ensure clients expectations are exceeded. 
+            Entrusting in this team of fully licensed & insured professionals will help ensure your project’s 
+            success.</li>
+            </ul>
+    </div>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2023 www.iBusiness.com All rights reserved
+        </p>
+    </footer>
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        rightNav = document.querySelector('.rightNav')
+        navlist = document.querySelector('.nav-list')
+
+
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('v-class-resp')
+            navlist.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-nav-resp')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <a href="web.html"><img src="dimond.png" alt="logo"></a>
+            </div>
+            <li><a href="web.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="#"> Architectural Services</a>
+                        <a href="#">Interior Design</a>
+                        <a href="#">Programming</a>
+                        <a href="#">Bidding Administration</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="about-img services">
+        <h1>Our Services</h1>
+        <h2>We offer a comprehensive range of architectural services</h2>
+        <p>From initial concept development and feasibility studies to detailed design</p>
+    </div>
+    <div class="services-content">
+        <h2>Welcome to our architectural website, where creativity meets functionality. Our services are designed to bring your architectural dreams to life. Here's a glimpse of what we offer:</h2>
+
+            <ul><li> <b>1. Custom Architectural Designs:</b> Our team of talented architects will work closely with you to create unique and personalized architectural designs that reflect your vision. From residential homes to commercial spaces, we transform ideas into stunning realities.</li>
+            
+                <li><b>2. 3D Visualization:</b> Visualize your project before it's built with our cutting-edge 3D rendering and visualization services. We use state-of-the-art software to create immersive and realistic representations of your future space, allowing you to make informed decisions and capture the essence of your design.</li>
+        
+                <li><b>3. Interior Design:</b> Our expertise extends beyond the building's exterior. We specialize in creating captivating interior designs that enhance functionality and aesthetics. From selecting color palettes and furniture to optimizing space utilization, we ensure every detail aligns with your vision and lifestyle.</li>
+        
+                <li><b>4. Sustainable Design:</b> We are committed to environmentally conscious architecture. Our team integrates sustainable design principles into every project, utilizing eco-friendly materials, energy-efficient systems, and green building techniques to reduce environmental impact and create healthier spaces.</li>
+        
+                <li><b> 5. Renovation and Remodeling:</b> Whether you're looking to revitalize an existing space or renovate an entire property, our team excels in transforming outdated structures into modern marvels. We combine creativity, functionality, and attention to detail to breathe new life into your space.</li>
+        
+                <li><b>6. Project Management:</b> We understand that the architectural process can be complex and time-consuming. Our dedicated project management team ensures seamless coordination, from initial concept to final construction. We handle permits, budgets, timelines, and contractor communications, relieving you of stress and ensuring a smooth project delivery.</li>
+        
+                <li><b>7. Consultation and Advisory:</b> Have a specific architectural challenge or seeking professional advice? Our experienced consultants are available to provide guidance on architectural feasibility, zoning regulations, code compliance, and more. We are here to answer your questions and help you make informed decisions.</li>
+            
+                <p>At our architectural website, we pride ourselves on delivering excellence in design, functionality, and client satisfaction. Your architectural aspirations are our top priority, and we look forward to partnering with you to create extraordinary spaces.</p></ul>
+    </div>
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2023 www.iBusiness.com All rights reserved
+        </p>
+    </footer>
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        rightNav = document.querySelector('.rightNav')
+        navlist = document.querySelector('.nav-list')
+
+
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('v-class-resp')
+            navlist.classList.toggle('v-class-resp')
+            navbar.classList.toggle('h-nav-resp')
+        })
+    </script>
+</body>
+
+</html>
